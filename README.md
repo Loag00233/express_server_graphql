@@ -15,7 +15,7 @@ to run this poor baby follow this steps:
 adress for GraphQL is localhost:5000/graphQL
 
 // example of the request that gives you full list (root query) of launches
-
+```
 {
   launches {
     flight_number,
@@ -30,10 +30,11 @@ adress for GraphQL is localhost:5000/graphQL
     }
   }
     }
+```
 
     // example of request about one launch
-
+  ```
     {
   launch(flight_number: 69) {
   }
-  
+  ```
