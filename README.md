@@ -13,3 +13,25 @@ to run this poor baby follow this steps:
 5) pray
 
 adress for GraphQL is localhost:5000/graphQL
+
+// example of the request that gives you full list (root query) of launches
+{
+  launches {
+    flight_number,
+    mission_name,
+    launch_success,
+    details,
+    launch_date_local,
+    rocket{
+      rocket_id,
+      rocket_name,
+      rocket_type
+    }
+  }
+    }
+
+    // example of request about one launch
+
+    {
+  launch(flight_number: 69) {
+  }
